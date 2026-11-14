@@ -1,0 +1,15 @@
+# Python
+*.pyc
+__pycache__/
+verify_data.py
+inspect_*.py
+audit_check.py
+check_*.py
+extracted_verified_data.json
+verified_audit_summary.json
+
+# Environment & Dependencies
+node_modules/
+.env
+.DS_Store
+Thumbs.db
