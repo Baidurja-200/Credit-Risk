@@ -4,7 +4,7 @@
 /* ==========================================================================
    ENHANCED LOGO DISPLAY, SIZING & VISUAL POLISH
    ========================================================================== */
-img[src*="assets/logos/"] {
+img[src^="data:image/png;base64"], img[src*="assets/logos/"] {
   display: inline-block !important;
   vertical-align: middle !important;
   object-fit: contain !important;
@@ -15,31 +15,31 @@ img[src*="assets/logos/"] {
   transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s ease !important;
 }
 
-img[src*="assets/logos/"]:hover {
+img[src^="data:image/png;base64"]:hover, img[src*="assets/logos/"]:hover {
   transform: scale(1.05) !important;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18) !important;
 }
 
 /* Card header & primary matrix logo wrapper */
-.shrink-0 > img[src*="logos/"] {
+.shrink-0 > img[src^="data:image/png;base64"], .shrink-0 > img[src*="logos/"] {
   height: 30px !important;
   max-width: 115px !important;
 }
 
 /* Slot selection cards */
-div > img[src*="logos/"][class*="h-6"] {
+div > img[src^="data:image/png;base64"][class*="h-6"], div > img[src*="logos/"][class*="h-6"] {
   height: 28px !important;
   max-width: 110px !important;
 }
 
 /* Versus comparison badges */
-div > img[src*="logos/"][class*="h-5"] {
+div > img[src^="data:image/png;base64"][class*="h-5"], div > img[src*="logos/"][class*="h-5"] {
   height: 24px !important;
   max-width: 95px !important;
 }
 
 /* Inline badges and peer tables */
-img[src*="logos/"][class*="h-3.5"] {
+img[src^="data:image/png;base64"][class*="h-3.5"], img[src*="logos/"][class*="h-3.5"] {
   height: 19px !important;
   max-width: 75px !important;
 }
